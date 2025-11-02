@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode. -->
+    <!-- Biasanya, untuk tema DayNight Material 3, Anda tidak perlu
+         mengulang semua definisi warna primer/sekunder jika
+         warna dasar di colors.xml sudah cocok untuk kedua mode atau
+         jika Anda ingin mode gelap menggunakan warna primer yang sama.
+         Material 3 DayNight akan menyesuaikan banyak warna secara otomatis.
+
+         Namun, jika Anda ingin warna primer yang *berbeda secara fundamental*
+         untuk mode gelap, Anda bisa menimpanya di sini.
+         Atau, lebih umum, Anda mungkin ingin menyesuaikan warna latar belakang
+         dan warna "on" (teks/ikon di atas permukaan).
+    -->
+    <style name="Base.Theme.NamaAplikasiAnda" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Contoh: Jika Anda ingin warna primer yang sedikit berbeda untuk mode gelap -->
+        <!-- <item name="colorPrimary">@color/app_primary_dark_theme_color</item> -->
+        <!-- <item name="colorOnPrimary">@color/app_on_primary_dark_theme_color</item> -->
+
+        <!-- Kustomisasi warna dasar untuk mode gelap yang umum -->
+        <item name="android:colorBackground">@color/black</item> <!-- Latar belakang default untuk tema gelap -->
+        <item name="colorSurface">@color/black</item> <!-- Warna permukaan untuk tema gelap -->
+        <item name="colorOnError">@color/black</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Jika Theme.NamaAplikasiAnda hanya mewarisi Base.Theme.NamaAplikasiAnda,
+         Anda mungkin tidak perlu mendefinisikannya lagi di sini. -->
+    <!-- <style name="Theme.NamaAplikasiAnda" parent="Base.Theme.NamaAplikasiAnda" /> -->
+</resources>
