@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SocialApp</string>
+
+    <!-- Tambahan untuk konten deskripsi -->
+    <string name="profile_image">Foto Profil</string>
+    <string name="notification_image">Gambar Notifikasi</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Select a Category"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- CardView 1 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="Science"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_science" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView 2 -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="SST"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_geography" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Tombol Spin Wheel -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSpinWheel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFB300"
+        android:padding="10dp"
+        android:text="🎡 Spin &amp; Earn Coins"
+        android:textColor="@android:color/white"
+        app:cornerRadius="30dp" />
+
+</LinearLayout>
