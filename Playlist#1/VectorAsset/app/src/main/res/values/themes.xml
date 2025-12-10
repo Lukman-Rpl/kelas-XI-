@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NamaAplikasiAnda" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Atribut Warna Primer -->
+        <item name="colorPrimary">@color/app_primary_color</item>
+        <item name="colorPrimaryVariant">@color/app_primary_variant_color</item>
+        <item name="colorOnPrimary">@color/app_on_primary_color</item>
+
+        <!-- Atribut Warna Sekunder (Opsional, sesuaikan jika Anda menggunakannya) -->
+        <item name="colorSecondary">@color/app_secondary_color</item>
+        <item name="colorSecondaryVariant">@color/app_secondary_variant_color</item>
+        <item name="colorOnSecondary">@color/app_on_secondary_color</item>
+
+        <!-- Warna lain yang mungkin ingin Anda atur dari tema -->
+        <item name="android:colorBackground">@color/white</item> <!-- Latar belakang default untuk tema terang -->
+        <item name="colorSurface">@color/white</item> <!-- Warna permukaan untuk CardView, BottomSheet, dll. di tema terang -->
+        <item name="colorError">#B00020</item> <!-- Warna standar untuk error -->
+        <item name="colorOnError">@color/white</item>
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.VectorAsset" parent="Base.Theme.NamaAplikasiAnda" />
+
+    <!-- Anda bisa membuat tema turunan khusus jika diperlukan, misalnya: -->
+    <!--
+    <style name="Theme.NamaAplikasiAnda.RedAccent">
+        <item name="colorSecondary">@color/some_red_color</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+    -->
+</resources>

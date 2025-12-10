@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Izinkan koneksi HTTP (cleartext) ke IP lokal -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.45.89</domain>
+    </domain-config>
+
+    <!-- Tambahan: izinkan semua cleartext traffic -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

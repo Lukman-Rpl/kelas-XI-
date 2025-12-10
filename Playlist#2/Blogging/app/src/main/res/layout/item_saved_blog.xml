@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvBlogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul Blog"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvBlogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konten Blog"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+</LinearLayout>
