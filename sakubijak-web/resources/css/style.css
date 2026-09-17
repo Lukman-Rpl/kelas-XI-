@@ -1,0 +1,181 @@
+@import url('https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700');
+
+:root {
+    color-scheme: light only;
+    --saku-blue-50: #eff6ff;
+    --saku-blue-100: #dbeafe;
+    --saku-blue-600: #2563eb;
+    --saku-blue-700: #1d4ed8;
+    --saku-blue-950: #172554;
+    --saku-page: #eff6ff;
+    --saku-surface: #ffffff;
+    --saku-surface-muted: #dbeafe;
+    --saku-border: #bfdbfe;
+    --saku-text: #1e293b;
+    --saku-text-muted: #64748b;
+}
+
+:root.dark {
+    color-scheme: dark only;
+    --saku-page: #0b1220;
+    --saku-surface: #111c2e;
+    --saku-surface-muted: #172a46;
+    --saku-border: #29466e;
+    --saku-text: #e5efff;
+    --saku-text-muted: #a8bddb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    background: var(--saku-page);
+    color: var(--saku-text);
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+    transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease, box-shadow 150ms ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+::selection {
+    background: var(--saku-blue-100);
+    color: var(--saku-blue-950);
+}
+
+.dark body,
+.dark .bg-blue-50 {
+    background-color: var(--saku-page) !important;
+}
+
+/* Dark utility classes are used by older views as action surfaces. Keep them blue in light mode. */
+.bg-zinc-900,
+.bg-zinc-950 {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+.dark .bg-zinc-900,
+.dark .bg-zinc-950 {
+    background-color: var(--saku-surface) !important;
+    color: var(--saku-text) !important;
+}
+
+.dark .bg-white {
+    background-color: var(--saku-surface) !important;
+}
+
+.dark .dark\:bg-white {
+    background-color: #e5efff !important;
+}
+
+.dark .dark\:text-zinc-900 {
+    color: #172554 !important;
+}
+
+.dark button.bg-zinc-900,
+.dark a.bg-zinc-900,
+.dark summary.bg-zinc-900,
+.dark button.bg-zinc-950,
+.dark a.bg-zinc-950 {
+    background-color: #367cf0 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 1px rgba(147, 197, 253, 0.2), 0 5px 16px rgba(37, 99, 235, 0.25);
+}
+
+.dark .bg-blue-50\/50,
+.dark .bg-sky-50,
+.dark .bg-emerald-50,
+.dark .bg-rose-50,
+.dark .bg-zinc-100,
+.dark .bg-neutral-100 {
+    background-color: var(--saku-surface-muted) !important;
+}
+
+.dark .border-blue-50,
+.dark .border-blue-100,
+.dark .border-blue-200,
+.dark .border-zinc-200,
+.dark .border-zinc-300,
+.dark .border-zinc-700,
+.dark .border-zinc-800,
+.dark .border-sky-100,
+.dark .border-emerald-200,
+.dark .border-rose-200 {
+    border-color: var(--saku-border) !important;
+}
+
+.dark .text-zinc-900,
+.dark .text-zinc-800,
+.dark .text-zinc-700,
+.dark .text-slate-800,
+.dark .text-blue-950,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark label {
+    color: var(--saku-text) !important;
+}
+
+.dark .text-zinc-500,
+.dark .text-zinc-400,
+.dark .text-slate-500,
+.dark .text-slate-600,
+.dark .text-emerald-800,
+.dark .text-rose-800,
+.dark .text-sky-800 {
+    color: var(--saku-text-muted) !important;
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+    background-color: #0d1728 !important;
+    border-color: var(--saku-border) !important;
+    color: var(--saku-text) !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+    color: #7890b2;
+}
+
+.dark a:not(.bg-blue-600):not(.bg-zinc-900),
+.dark button:not(.bg-blue-600):not(.bg-zinc-900) {
+    color: #a9c9ff;
+}
+
+.dark .bg-blue-600,
+.dark .bg-sky-600 {
+    background-color: #367cf0 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 0 1px rgba(147, 197, 253, 0.2), 0 5px 16px rgba(37, 99, 235, 0.25);
+}
+
+.dark .hover\:bg-blue-700:hover,
+.dark .hover\:bg-blue-600:hover {
+    background-color: #5b96ff !important;
+}
+
+.theme-toggle {
+    border-color: var(--saku-border);
+    color: #2563eb;
+}
+
+.dark .theme-toggle {
+    background: #172a46;
+    border-color: #4d79b5;
+    color: #c7dcff;
+}

@@ -1,0 +1,229 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.SakuBijak" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorSecondaryVariant">@color/primary_blue_light</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/card_white</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/primary_blue_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Material Components -->
+        <item name="materialButtonStyle">@style/Widget.SakuBijak.Button</item>
+        <item name="textInputStyle">@style/Widget.SakuBijak.TextInputLayout</item>
+        <item name="bottomNavigationStyle">@style/Widget.SakuBijak.BottomNavigationView</item>
+    </style>
+
+    <style name="Theme.SakuBijak" parent="Base.Theme.SakuBijak" />
+
+    <!-- ================================ -->
+    <!-- Custom Button Styles -->
+    <!-- ================================ -->
+
+    <!-- Primary Button -->
+    <style name="Widget.SakuBijak.Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+    </style>
+
+    <!-- Outlined Button -->
+    <style name="Widget.SakuBijak.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="strokeColor">@color/primary_blue</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="iconTint">@color/primary_blue</item>
+        <item name="rippleColor">@color/soft_blue</item>
+    </style>
+
+    <!-- Text Button -->
+    <style name="Widget.SakuBijak.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="iconTint">@color/primary_blue</item>
+        <item name="rippleColor">@color/soft_blue</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- TextInputLayout Styles -->
+    <!-- ================================ -->
+
+    <style name="Widget.SakuBijak.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary_blue</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/primary_blue</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="errorTextColor">@color/danger_red</item>
+        <item name="startIconTint">@color/primary_blue</item>
+        <item name="endIconTint">@color/text_secondary</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- CardView Styles -->
+    <!-- ================================ -->
+
+    <style name="Widget.SakuBijak.CardView" parent="CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/card_white</item>
+    </style>
+
+    <style name="Widget.SakuBijak.CardView.Elevated" parent="Widget.SakuBijak.CardView">
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="Widget.SakuBijak.CardView.Flat" parent="Widget.SakuBijak.CardView">
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Bottom Navigation Style -->
+    <!-- ================================ -->
+
+    <style name="Widget.SakuBijak.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_color_blue</item>
+        <item name="itemTextColor">@color/bottom_nav_color_blue</item>
+        <item name="itemRippleColor">@color/soft_blue</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:background">@color/card_white</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- FAB Styles -->
+    <!-- ================================ -->
+
+    <style name="Widget.SakuBijak.FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="tint">@android:color/white</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+    </style>
+
+    <style name="Widget.SakuBijak.ExtendedFloatingActionButton" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="iconTint">@android:color/white</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Toolbar/AppBar Styles -->
+    <!-- ================================ -->
+
+    <style name="Widget.SakuBijak.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="subtitleTextColor">#DDFFFFFF</item>
+        <item name="android:background">@drawable/header_gradient_blue</item>
+        <item name="popupTheme">@style/ThemeOverlay.SakuBijak.Popup</item>
+    </style>
+
+    <style name="ThemeOverlay.SakuBijak.Popup" parent="ThemeOverlay.Material3.Light">
+        <item name="colorPrimary">@color/primary_blue</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Dialog Styles -->
+    <!-- ================================ -->
+
+    <style name="ThemeOverlay.SakuBijak.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="android:colorBackground">@color/card_white</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.SakuBijak.Button.Text</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.SakuBijak.Button.Text</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Chip Styles -->
+    <!-- ================================ -->
+
+    <style name="Widget.SakuBijak.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">@color/soft_blue</item>
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="chipStrokeColor">@color/primary_blue</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">8dp</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Progress Bar Styles -->
+    <!-- ================================ -->
+
+    <style name="Widget.SakuBijak.ProgressBar" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="indicatorColor">@color/primary_blue</item>
+        <item name="trackColor">@color/divider</item>
+        <item name="trackCornerRadius">4dp</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Text Appearance Styles -->
+    <!-- ================================ -->
+
+    <style name="TextAppearance.SakuBijak.Headline1" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SakuBijak.Headline2" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SakuBijak.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SakuBijak.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SakuBijak.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Splash Screen Theme -->
+    <!-- ================================ -->
+
+    <style name="Theme.SakuBijak.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/header_gradient_blue</item>
+        <item name="postSplashScreenTheme">@style/Theme.SakuBijak</item>
+        <item name="android:statusBarColor">@color/primary_blue_dark</item>
+    </style>
+
+</resources>

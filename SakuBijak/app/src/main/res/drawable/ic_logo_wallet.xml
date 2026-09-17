@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Card / Saku Belakang (Aksen Hijau Gelap) -->
+    <path
+        android:fillColor="#059669"
+        android:pathData="M25,20 H75 C78.3,20 81,22.7 81,26 V32 H19 V26 C19,22.7 21.7,20 25,20 Z" />
+
+    <!-- Bodi Utama Dompet (Hijau Utama) -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M20,28 H80 C83.3,28 86,30.7 86,34 V72 C86,75.3 83.3,78 80,78 H20 C16.7,78 14,75.3 14,72 V34 C14,30.7 16.7,28 20,28 Z" />
+
+    <!-- Layer Lipatan Saku Depan -->
+    <path
+        android:fillColor="#047857"
+        android:pathData="M14,48 H86 V72 C86,75.3 83.3,78 80,78 H20 C16.7,78 14,75.3 14,72 V48 Z" />
+
+    <!-- Tali Pengunci Dompet (Strap) -->
+    <path
+        android:fillColor="#065F46"
+        android:pathData="M62,44 H86 V62 H62 C57.6,62 54,58.4 54,54 C54,49.6 57.6,44 62,44 Z" />
+
+    <!-- Kancing Emas di Tali Pengunci -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M62,54 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" />
+
+    <!-- Huruf 'S' Tebal & Elegan di Bagian Saku Depan -->
+    <path
+        android:pathData="M 43,44 C 41,41 32,41 32,46 C 32,52 43,52 43,58 C 43,63 32,63 30,60"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+</vector>

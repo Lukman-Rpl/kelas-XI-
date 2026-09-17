@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:name=".MySubApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo_wallet"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_wallet"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.SakuBijak"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="35">
+
+        <meta-data
+            android:name="com.midtrans.sdk.uikit.client_key"
+            android:value="Mid-client-ILtK1zeJ53TP1e2-" />
+
+        <meta-data
+            android:name="com.midtrans.sdk.uikit.base_url"
+            android:value="https://sakubijak.com" />
+
+        <!-- 1. SplashActivity sebagai LAUNCHER UTAMA -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SakuBijak">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. LoginActivity menjadi Activity biasa -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- 3. MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".TransferActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".AddTransactionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".WalletListActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".TopUpActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".JoinGroupActivity"
+            android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="sakubijak.com"
+                    android:pathPrefix="/join" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bottom_nav_color_blue">#1976D2</color>
+
+    <!-- Primary Colors - Disesuaikan agar lebih tenang di mata -->
+    <color name="primary_blue">#5E92F3</color>
+    <color name="primary_blue_dark">#1E293B</color>
+    <color name="primary_blue_light">#7BA7F7</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_blue">#64B5F6</color>
+    <color name="soft_blue">#1E293B</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#81C784</color>
+    <color name="warning_orange">#FFB74D</color>
+    <color name="accent_yellow">#FF2A00</color>
+    <color name="danger_red">#E57373</color>
+    <color name="teal_700">#80CBC4</color>
+
+    <!-- Neutral Colors (Warna Teks & Divider Mode Gelap) -->
+    <color name="text_primary">#E1E1E1</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_hint">#757575</color>
+    <color name="divider">#2C2C2C</color>
+    <color name="background">#121212</color>
+
+    <!-- Background Variants (Warna Kartu & Container Mode Gelap) -->
+    <color name="card_white">#1E1E1E</color>
+    <color name="light_blue_bg">#1A2332</color>
+    <color name="light_green_bg">#1A2B1E</color>
+    <color name="light_red_bg">#2D1A1A</color>
+
+    <!-- Dark Mode Colors -->
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="text_primary_dark">#E1E1E1</color>
+    <color name="text_secondary_dark">#B0B0B0</color>
+    <color name="text_hint_dark">#757575</color>
+
+    <!-- Common Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

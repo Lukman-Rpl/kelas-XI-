@@ -1,0 +1,10 @@
+<x-layouts.app.sidebar>
+    <div class="max-w-3xl space-y-6">
+        <div class="flex items-end justify-between gap-4"><div><p class="text-sm text-zinc-500">Akun</p><h1 class="text-2xl font-semibold">Profil</h1></div><a href="{{ route('profile.edit') }}" class="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white dark:bg-white dark:text-zinc-900">Edit profil</a></div>
+        @include('partials.flash')
+        <section class="rounded-xl border border-zinc-200 bg-white p-6 dark:border-zinc-700 dark:bg-zinc-900">
+            <div class="flex items-center gap-4"><div class="flex size-16 items-center justify-center overflow-hidden rounded-full bg-sky-100 text-xl font-semibold text-sky-700 dark:bg-sky-950 dark:text-sky-300">@if ($user->profile_photo_url)<img class="size-full object-cover" src="{{ $user->profile_photo_url }}" alt="Foto profil">@else{{ $user->initials() }}@endif</div><div><h2 class="text-lg font-semibold">{{ $user->name }}</h2><p class="text-sm text-zinc-500">{{ $user->email }}</p></div></div>
+        </section>
+        <section class="rounded-xl border border-zinc-200 bg-white p-6 dark:border-zinc-700 dark:bg-zinc-900"><h2 class="font-semibold">Ubah password</h2><form class="mt-4 grid gap-4" method="POST" action="{{ route('profile.password') }}">@csrf @method('PUT')<label class="grid gap-1 text-sm">Password saat ini<input required type="password" name="current_password" class="rounded-lg border-zinc-300 dark:border-zinc-600 dark:bg-zinc-800"></label><label class="grid gap-1 text-sm">Password baru<input required type="password" name="password" class="rounded-lg border-zinc-300 dark:border-zinc-600 dark:bg-zinc-800"></label><label class="grid gap-1 text-sm">Konfirmasi password<input required type="password" name="password_confirmation" class="rounded-lg border-zinc-300 dark:border-zinc-600 dark:bg-zinc-800"></label><button class="w-fit rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white dark:bg-white dark:text-zinc-900">Simpan password</button></form></section>
+    </div>
+</x-layouts.app.sidebar>

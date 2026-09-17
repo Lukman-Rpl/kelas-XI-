@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Budget -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_budget_category_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@android:drawable/ic_menu_today"
+                app:tint="@color/teal_700"
+                android:padding="6dp"
+                android:background="@drawable/circle_background"
+                android:contentDescription="Icon Anggaran" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp">
+
+                <!-- Nama Kategori Anggaran -->
+                <TextView
+                    android:id="@+id/tv_budget_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan &amp; Minuman"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    tools:text="Makanan &amp; Minuman" />
+
+                <!-- Tanggal / Periode Bulan -->
+                <TextView
+                    android:id="@+id/tv_budget_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="September 2026"
+                    android:textSize="12sp"
+                    android:textColor="#757575"
+                    android:layout_marginTop="2dp"
+                    tools:text="September 2026" />
+            </LinearLayout>
+
+            <!-- Persentase Anggaran -->
+            <TextView
+                android:id="@+id/tv_budget_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35%"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                tools:text="35%" />
+        </LinearLayout>
+
+        <!-- Progress Bar & Detail Anggaran -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <ProgressBar
+                android:id="@+id/progress_budget"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progress="35"
+                android:progressDrawable="@drawable/custom_progress_bar"
+                tools:progress="35" />
+
+            <!-- Info Terpakai -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Terpakai"
+                    android:textSize="11sp"
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:id="@+id/tv_budget_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    tools:text="Rp 2.750.000" />
+            </LinearLayout>
+
+            <!-- Info Limit / Batas Anggaran -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Batas/Limit Anggaran"
+                    android:textSize="11sp"
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:id="@+id/tv_budget_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#757575"
+                    tools:text="Rp 8.000.000" />
+            </LinearLayout>
+
+            <!-- Info Sisa Limit Anggaran -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sisa Limit Anggaran"
+                    android:textSize="11sp"
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:id="@+id/tv_budget_remaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/teal_700"
+                    tools:text="Rp 5.250.000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Status Badge & Peringatan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp">
+
+            <LinearLayout
+                android:id="@+id/layout_budget_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/badge_safe_background"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp">
+
+                <ImageView
+                    android:id="@+id/iv_budget_status_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@android:drawable/presence_online"
+                    app:tint="#4CAF50"
+                    android:contentDescription="Status Icon" />
+
+                <TextView
+                    android:id="@+id/tv_budget_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Aman"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#4CAF50"
+                    android:layout_marginStart="6dp"
+                    tools:text="Status: Aman" />
+            </LinearLayout>
+
+            <!-- Text Peringatan Jika Anggaran Menipis/Habis -->
+            <TextView
+                android:id="@+id/tv_budget_warning_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="⚠️ Mendekati Limit!"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#F44336"
+                android:gravity="end"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

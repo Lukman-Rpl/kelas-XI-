@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SakuBijak</string>
+    <string name="back">Kemabali</string>
+    <string name="profile_photo">Foto Profil</string>
+    <string name="name_icon">Ikon Nama</string>
+    <string name="email_icon">Ikon Email</string>
+    <string name="password_icon">Ikon Kunci Password</string>
+    <string name="title_wallet_management">Manajemen Wallet</string>
+    <string name="label_total_balance">Total Saldo Keseluruhan</string>
+    <string name="label_your_wallets">Daftar Dompet Anda</string>
+    <string name="msg_empty_wallet">Belum Ada Dompet</string>
+    <string name="action_add_wallet">Tambah Dompet</string>
+    <string name="cd_add_wallet">Tambah Dompet Baru</string>
+    <string name="cd_back">Kembali</string>
+</resources>

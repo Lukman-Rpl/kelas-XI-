@@ -1,0 +1,6 @@
+<!-- Optional: res/drawable/bg_rounded_white_transparent.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#33FFFFFF" /> <!-- Putih transparan -->
+    <corners android:radius="8dp" />
+</shape>
